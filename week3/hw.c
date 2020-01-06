@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{	int i,j,n;
+
+	int thirdmax=0;
+	int secmax=0;
+	int maxm=0;
+
+	for(j=1;j<=5;j++)
+	{
+	printf("please enter the number where j is %d:",j);
+	scanf(" %d",&i);
+
+	
+	if(i>maxm)
+		{
+		thirdmax=secmax;
+		secmax=maxm;
+		maxm=i;
+		}
+	if(i<maxm && i>secmax)
+		{
+		thirdmax=secmax;
+		secmax=i;
+		}
+	if(i<secmax && i>thirdmax)
+		{
+		thirdmax=i;		
+		}
+	
+	if(j==1)
+		{
+		maxm=i;
+		}
+		
+	
+	}
+	printf("median is %d \n",thirdmax);
+
+
+	return 0;
+}

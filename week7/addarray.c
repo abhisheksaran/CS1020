@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{	int a[5], b[5], c[5];
+	int counter = 0;
+	int i;
+	printf("Enter 5 numbers in the first array\n");
+	while(counter < 5)
+	{
+		scanf("%d",&a[counter]);
+		counter = counter + 1;
+	}
+	counter = 0;  
+	printf("Enter 5 numbers in the second array\n");
+	while(counter < 5)
+	{
+		scanf("%d",&b[counter]);
+		counter = counter + 1;
+	}
+
+	for(i=0;i<5;i++)
+	{
+	c[i]=a[i]+b[i];	
+	}
+	printf("--------------\n");
+	for(i=0;i<5;i++)
+	{
+		printf("%d\n",c[i]);
+	}
+	return 0;
+}
